@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.ecloud.rcsd.ui.activity.UserCenterActivity">
+
+    <include layout="@layout/header_layout" ></include>
+
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:orientation="vertical"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:visibility="visible"
+                android:background="@color/white"
+                android:paddingTop="@dimen/common10dp"
+                android:paddingBottom="@dimen/common10dp"
+                android:paddingRight="@dimen/common_margin"
+                android:paddingLeft="@dimen/common_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/text_color_normal"
+                    android:layout_width="wrap_content"
+                    android:text="头像"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:layout_height="wrap_content"/>
+
+             <LinearLayout
+                 android:id="@+id/header_bt"
+                 android:layout_alignParentRight="true"
+                 android:layout_width="wrap_content"
+                 android:gravity="center_vertical"
+                 android:layout_centerVertical="true"
+                 android:layout_height="wrap_content">
+
+                 <de.hdodenhof.circleimageview.CircleImageView
+                     android:id="@+id/header_icon"
+                     android:layout_marginRight="@dimen/common10dp"
+                     android:layout_width="@dimen/common60dp"
+                     android:src="@drawable/header"
+                     android:layout_height="@dimen/common60dp"/>
+
+                 <ImageView
+
+                     android:src="@drawable/right_arrow"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"/>
+             </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <View style="@style/Divider" ></View>
+
+             <View style="@style/Divider" android:layout_marginTop="@dimen/common10dp"></View>
+
+
+
+        <RelativeLayout
+            android:background="@drawable/white_press_bg"
+            android:layout_width="match_parent"
+            android:paddingLeft="@dimen/common_margin"
+            android:paddingRight="@dimen/common_margin"
+            android:layout_height="@dimen/common46dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户名"
+                android:layout_centerVertical="true"
+                android:textColor="@color/text_color_normal"
+                />
+
+
+            <LinearLayout
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="待完善"
+                    android:layout_marginRight="@dimen/common10dp"
+                    android:textColor="@color/text_color_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:src="@drawable/right_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+            <View style="@style/Divider" ></View>
+
+            <RelativeLayout
+                android:background="@drawable/white_press_bg"
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/common_margin"
+                android:paddingRight="@dimen/common_margin"
+                android:layout_height="@dimen/common46dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="性别"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/text_color_normal"
+                    />
+
+
+                <LinearLayout
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="待完善"
+                        android:layout_marginRight="@dimen/common10dp"
+                        android:textColor="@color/text_color_gray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:src="@drawable/right_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+
+
+            </RelativeLayout>
+            <View style="@style/Divider" ></View>
+
+
+            <RelativeLayout
+                android:background="@drawable/white_press_bg"
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/common_margin"
+                android:paddingRight="@dimen/common_margin"
+                android:layout_height="@dimen/common46dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="出生年月"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/text_color_normal"
+                    />
+
+
+                <LinearLayout
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="待完善"
+                        android:layout_marginRight="@dimen/common10dp"
+                        android:textColor="@color/text_color_gray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:src="@drawable/right_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+
+
+            </RelativeLayout>
+            <View style="@style/Divider" ></View>
+
+
+            <RelativeLayout
+                android:background="@drawable/white_press_bg"
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/common_margin"
+                android:paddingRight="@dimen/common_margin"
+                android:layout_height="@dimen/common46dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="所在地"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/text_color_normal"
+                    />
+
+                <LinearLayout
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="待完善"
+                        android:layout_marginRight="@dimen/common10dp"
+                        android:textColor="@color/text_color_gray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:src="@drawable/right_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+
+
+
+            </RelativeLayout>
+            <View style="@style/Divider" ></View>
+
+
+             <View style="@style/Divider" android:layout_marginTop="@dimen/common6dp"></View>
+
+
+             <TextView
+                 android:text="添加工作信息"
+                 android:textColor="@color/text_color_gray"
+                 android:layout_width="match_parent"
+                 android:gravity="center"
+                 android:background="@drawable/white_press_bg"
+                 android:layout_height="@dimen/common46dp"/>
+
+            <View style="@style/Divider" ></View>
+
+
+            <View style="@style/Divider" android:layout_marginTop="@dimen/common6dp"></View>
+
+
+            <TextView
+                android:text="添加教育信息"
+                android:textColor="@color/text_color_gray"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:background="@drawable/white_press_bg"
+                android:layout_height="@dimen/common46dp"/>
+
+            <View style="@style/Divider" ></View>
+
+            <View style="@style/Divider" android:layout_marginTop="@dimen/common10dp"></View>
+
+
+            <TextView
+                android:text="我的名片"
+                android:background="@drawable/white_press_bg"
+                android:textColor="@color/text_color_normal"
+                android:gravity="center_vertical"
+                android:drawableRight="@drawable/right_arrow"
+                android:paddingLeft="@dimen/common_margin"
+                android:paddingRight="@dimen/common_margin"
+                android:textSize="@dimen/text_size_16sp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common46dp"/>
+
+            <View style="@style/Divider" ></View>
+
+            <TextView
+                android:text="手机号"
+                android:background="@drawable/white_press_bg"
+                android:textColor="@color/text_color_normal"
+                android:gravity="center_vertical"
+                android:drawableRight="@drawable/right_arrow"
+                android:paddingLeft="@dimen/common_margin"
+                android:paddingRight="@dimen/common_margin"
+                android:textSize="@dimen/text_size_16sp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common46dp"/>
+
+            <View style="@style/Divider" ></View>
+
+            <RelativeLayout
+                android:background="@drawable/white_press_bg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common46dp">
+
+                <TextView
+                    android:text="公开手机"
+                    android:background="@drawable/white_press_bg"
+                    android:textColor="@color/text_color_normal"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/common_margin"
+                    android:paddingRight="@dimen/common_margin"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/common46dp"/>
+
+                <Switch
+                    android:layout_marginRight="@dimen/common_margin"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+            <View style="@style/Divider" ></View>
+
+
+            <TextView
+                android:text="邮箱"
+                android:background="@drawable/white_press_bg"
+                android:textColor="@color/text_color_normal"
+                android:gravity="center_vertical"
+                android:drawableRight="@drawable/right_arrow"
+                android:paddingLeft="@dimen/common_margin"
+                android:paddingRight="@dimen/common_margin"
+                android:textSize="@dimen/text_size_16sp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common46dp"/>
+
+            <View style="@style/Divider" ></View>
+
+
+
+            <RelativeLayout
+                android:background="@drawable/white_press_bg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common46dp">
+
+                <TextView
+                    android:text="公开邮箱"
+                    android:background="@drawable/white_press_bg"
+                    android:textColor="@color/text_color_normal"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/common_margin"
+                    android:paddingRight="@dimen/common_margin"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/common46dp"/>
+
+                <Switch
+                    android:layout_marginRight="@dimen/common_margin"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+            <View style="@style/Divider"  android:layout_marginBottom="@dimen/common20dp"></View>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

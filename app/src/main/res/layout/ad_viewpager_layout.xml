@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common30dp"
+        android:layout_gravity="bottom"
+        android:background="@color/translucent"
+        android:gravity="center_vertical"
+        android:weightSum="10">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/common30dp"
+            android:layout_weight="6"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/common10dp"
+            android:singleLine="true"
+            android:text="今天是个好日子"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_14sp"/>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="right|center_vertical"
+            android:paddingRight="@dimen/common_margin">
+
+            <com.runer.liabary.indicator.CircleIndicator
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                app:ci_animator="@animator/indicator_animator"
+                app:ci_drawable="@drawable/indicator_selected_shape"
+                app:ci_drawable_unselected="@drawable/indicator_unselected_shape"
+                app:ci_height="6dp"
+                app:ci_margin="3dp"
+                app:ci_width="6dp">
+            </com.runer.liabary.indicator.CircleIndicator>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

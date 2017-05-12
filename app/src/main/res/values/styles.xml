@@ -1,0 +1,51 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/background</item>
+
+    </style>
+
+    <style name="TranslucentWindow" parent="AppTheme">
+        <item name="android:windowBackground">@color/translucent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+
+    <style name="Divider">
+        <item name="android:background">@color/divider</item>
+        <item name="android:padding">0.0dip</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1.0px</item>
+    </style>
+
+    <style name="VerticalDivider">
+        <item name="android:background">@color/divider</item>
+        <item name="android:padding">0.0dip</item>
+        <item name="android:layout_width">1.0px</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+
+
+    <style name="popWindow_animation">
+        <item name="android:windowEnterAnimation">@anim/pop_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/pop_exit_anim</item>
+    </style>
+
+
+    <style name="normal_bt">
+
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_size_18sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/normal_bt_bg</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/normal_bt_height</item>
+
+    </style>
+</resources>

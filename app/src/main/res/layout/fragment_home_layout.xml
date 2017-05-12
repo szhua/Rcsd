@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+
+
+    <LinearLayout
+        android:background="@color/theme_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_header_height">
+
+
+        <TextView
+            android:id="@+id/change_area_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="人才山东"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:paddingRight="@dimen/common10dp"
+            android:paddingLeft="@dimen/common10dp"
+            android:drawablePadding="@dimen/common6dp"
+            android:drawableRight="@drawable/arrow_down"
+            />
+
+
+        <TextView
+            android:id="@+id/serch_bt"
+            android:layout_marginTop="@dimen/common8dp"
+            android:layout_marginBottom="@dimen/common8dp"
+            android:paddingLeft="@dimen/common10dp"
+            android:layout_marginRight="@dimen/common_margin"
+            android:background="@drawable/home_search_bg"
+            android:layout_width="match_parent"
+            android:text="请输入搜索内容"
+            android:gravity="left|center_vertical"
+            android:drawablePadding="@dimen/common10dp"
+            android:textSize="@dimen/text_size_14sp"
+            android:textColor="@color/text_color_gray"
+            android:drawableLeft="@drawable/searh_search"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+    <View style="@style/Divider"></View>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/home_list_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

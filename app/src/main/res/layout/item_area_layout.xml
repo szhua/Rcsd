@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:gravity="center_vertical"
+              android:background="@drawable/white_press_bg"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+<RelativeLayout
+    android:id="@+id/has_got"
+    android:layout_width="match_parent"
+    android:paddingLeft="@dimen/common10dp"
+    android:paddingRight="@dimen/common10dp"
+    android:layout_height="@dimen/common46dp">
+
+    <TextView
+        android:id="@+id/area_name_has_got"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="山东省"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/text_size_16sp"
+        android:textColor="@color/theme_color"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已开通"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/text_size_16sp"
+        android:textColor="@color/theme_color"
+        />
+
+</RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/not_got"
+        android:layout_width="match_parent"
+        android:paddingLeft="@dimen/common10dp"
+        android:paddingRight="@dimen/common10dp"
+        android:layout_height="@dimen/common46dp">
+
+        <TextView
+            android:id="@+id/area_name_not_got"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="山东省"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size_14sp"
+            android:textColor="@color/text_color_normal"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="即将上线，敬请期待"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/text_size_14sp"
+            android:textColor="@color/text_color_light"
+            />
+
+    </RelativeLayout>
+    <View style="@style/Divider" android:layout_marginBottom="1px"></View>
+
+
+
+</LinearLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ecloud.rcsd.ui.activity.RgisterActivity">
+
+
+    <include layout="@layout/header_layout"></include>
+
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common16dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+
+        <View style="@style/Divider"></View>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common46dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/common6dp"
+            android:paddingLeft="@dimen/common16dp"
+            android:paddingRight="@dimen/common16dp"
+            android:paddingTop="@dimen/common6dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/phone"/>
+
+            <EditText
+                android:id="@+id/username_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:hint="请输入您的手机号"
+                android:inputType="number"
+                android:maxLength="11"
+                android:paddingLeft="@dimen/common10dp"
+                android:paddingRight="@dimen/common10dp"
+                android:textColor="@color/text_color_normal"
+                android:textColorHint="@color/text_color_light"
+                android:textSize="@dimen/text_size_16sp"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/Divider"
+            android:layout_marginLeft="@dimen/common16dp"></View>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common46dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/common6dp"
+            android:paddingLeft="@dimen/common16dp"
+            android:paddingRight="@dimen/common16dp"
+            android:paddingTop="@dimen/common6dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pass"/>
+
+            <EditText
+                android:id="@+id/password_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:hint="密码6-16个数字或者英文字母"
+                android:inputType="textPassword"
+                android:paddingLeft="@dimen/common10dp"
+                android:paddingRight="@dimen/common10dp"
+                android:textColor="@color/text_color_normal"
+                android:textColorHint="@color/text_color_light"
+                android:textSize="@dimen/text_size_16sp"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/Divider"
+            android:layout_marginLeft="@dimen/common16dp"></View>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common46dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/common6dp"
+            android:paddingLeft="@dimen/common16dp"
+            android:paddingRight="@dimen/common16dp"
+            android:paddingTop="@dimen/common6dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/msg"/>
+
+            <EditText
+                android:id="@+id/code_input_et"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:hint="输入短信验证码"
+                android:inputType="number"
+                android:paddingLeft="@dimen/common10dp"
+                android:paddingRight="@dimen/common10dp"
+                android:textColor="@color/text_color_normal"
+                android:textColorHint="@color/text_color_light"
+                android:textSize="@dimen/text_size_16sp"/>
+
+            <View style="@style/VerticalDivider"></View>
+
+
+            <com.ecloud.rcsd.widget.CodeButton
+                android:id="@+id/code_bt"
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:textColor="@color/theme_color"
+                android:layout_height="match_parent"
+                android:text="@string/input_code"
+                android:gravity="center"
+
+                ></com.ecloud.rcsd.widget.CodeButton>
+
+        </LinearLayout>
+
+
+        <View style="@style/Divider"></View>
+    </LinearLayout>
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:gravity="center"
+          android:paddingTop="@dimen/common6dp"
+          android:paddingBottom="@dimen/common6dp"
+          android:layout_height="wrap_content">
+          <CheckBox
+              android:button="@null"
+              android:drawableLeft="@drawable/regist_check_bg"
+              android:layout_width="wrap_content"
+              android:checked="true"
+              android:layout_height="wrap_content"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="注册即默认您已认真阅读并同意人才山东APP《用户注册协议》"
+              android:textSize="@dimen/text_size_10sp"
+              android:textColor="@color/text_color_light"
+              android:paddingLeft="@dimen/common6dp"
+              />
+
+      </LinearLayout>
+
+
+        <TextView
+            android:layout_marginTop="@dimen/common40dp"
+            android:text="注册"
+            android:id="@+id/reigter_bt"
+            android:layout_marginLeft="@dimen/common_margin"
+            android:layout_marginRight="@dimen/common_margin"
+            style="@style/normal_bt"
+         ></TextView>
+
+
+
+
+
+
+</LinearLayout>

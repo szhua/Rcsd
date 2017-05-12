@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">人才山东</string>
+    <string name="share_start">分享开始...</string>
+    <string name="share_success">分享成功</string>
+    <string name="share_cancle">分享取消了</string>
+    <string name="share_error">分享失败</string>
+    <string name="input_code">获取短信校验码</string>
+</resources>
